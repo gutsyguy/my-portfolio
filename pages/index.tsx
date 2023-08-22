@@ -74,8 +74,8 @@ const Home = () => {
       <Timeline/>
       <Projects/>
       <Skills/>
-      <div className='text-white bg-black pt-[5rem]'>
-        <ContactForm/>
+      <div className='#Contact text-white bg-black pt-[5rem]'>
+        <Contact/>
       </div>
     </div>
   )
