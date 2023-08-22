@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === "POST") {
     const { name, email, message } = req.body;
     console.log(req.body)
-    const user = process.env.user;
+    const user = 'yalambersubba13@gmail.com';
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -15,7 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       secure: true,
       auth: {
         user: user,
-        pass: process.env.pass
+        pass: 'fadtugeybctnlyvr'
       }
     });
 
