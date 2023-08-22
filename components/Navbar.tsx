@@ -17,7 +17,7 @@ const Navbar:React.FC = () => {
               flex
               justify-center'>
             <ul className="">
-                <Link href = "/About" className='nav-link hover:bg-[#003566] py-[2rem] px-[2rem]'>About</Link>
+                <Link href = "#About" className='nav-link hover:bg-[#003566] py-[2rem] px-[2rem]'>About</Link>
                 <Link href = "#Timeline" className='nav-link hover:bg-[#003566] py-[2rem] px-[2rem]'>Timeline</Link>
                 <Link href = "#Projects" className='nav-link hover:bg-[#003566] py-[2rem] px-[2rem]'>Project</Link>
                 <Link href = "#Skills" className='nav-link hover:bg-[#003566] py-[2rem] px-[2rem]'> Skills</Link>
