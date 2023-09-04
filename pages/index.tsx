@@ -1,34 +1,42 @@
-'use client'
+"use client";
 //libraries
-import { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css';
-import data from './api/data';
-import Project from '@/components/Project';
-import ContactForm from '@/components/ContactForm';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import data from "./api/data";
+import Project from "@/components/Project";
+import ContactForm from "@/components/ContactForm";
 
 //sections
-import Skills from '@/components/sections/Skills';
-import Navbar from '@/components/Navbar'
-import About from '@/components/sections/About'
-import Projects from '@/components/sections/Projects'
-import Timeline from '@/components/sections/Timeline'
-import Contact from '@/components/sections/Contact';
-import Link from 'next/link';
+import Skills from "@/components/sections/Skills";
+import Navbar from "@/components/Navbar";
+import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
+import Timeline from "@/components/sections/Timeline";
+import Contact from "@/components/sections/Contact";
+import Link from "next/link";
 
 const Home = () => {
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
   return (
     <div>
-      <div className='flex justify-center pt-[2rem] pb-[2rem] bg-black bg-no-repeat bg-cover text-white' style={{backgroundImage: "url('/Timeline.svg')"}}>
-          <div className=' opacity-75 pt-[15rem] pb-[25rem] '>
-            <h1 data-aos="fade-up" className='text-[5rem]'>Hi I&apos;m
-              <b className='text-[5rem] inline-block text-[#D8A206] ml-4'>Yalamber</b>
-            </h1>
-            <h2 data-aos="fade-up" className='text-[3rem] text-center'>Software Engineer</h2>
-          </div>
+      <div
+        className="flex justify-center pt-[2rem] pb-[2rem] bg-black bg-no-repeat bg-cover text-white"
+        style={{ backgroundImage: "url('/Timeline.svg')" }}
+      >
+        <div className=" opacity-75 pt-[15rem] pb-[25rem] ">
+          <h1 data-aos="fade-up" className="text-[5rem]">
+            Hi I&apos;m
+            <b className="text-[5rem] inline-block text-[#D8A206] ml-4">
+              Yalamber
+            </b>
+          </h1>
+          <h2 data-aos="fade-up" className="text-[3rem] text-center">
+            Software Engineer
+          </h2>
+        </div>
       </div>
       {/* <div className=' text-white bg-black'>
           <h1 className='ml-[9rem] text-[3rem]'>Popular Projects</h1>
@@ -70,15 +78,15 @@ const Home = () => {
         </div>
         <Link href="#projects" className='ml-[9rem] text-[2rem]'>See all projects</Link>
       </div> */}
-      <About image='/nextlogo.png'/>
-      <Timeline/>
+      <About image="/nextlogo.png" />
+      {/* <Timeline/>
       <Projects/>
       <Skills/>
       <div className='#Contact text-white bg-black pt-[5rem]'>
         <Contact/>
-      </div>
+      </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
