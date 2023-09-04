@@ -38,6 +38,8 @@ const About = (props: about) => {
           </div>
         </div>
       </div>
+
+      <h1 className="text-center m-20 text-[5rem]">Specialties</h1>
       <div className="flex justify-center flex-wrap mt-12">
         <MiniCard
           data-aos="fade-up"
