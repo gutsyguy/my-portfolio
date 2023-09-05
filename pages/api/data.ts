@@ -80,6 +80,12 @@ const data = {
                     level: 'Advanced'
                 },
                 {
+                    image: '/images/kotlin.png',
+                    name: 'Kotlin',
+                    profiency: '80%',
+                    level: 'Advanced'
+                },
+                {
                     image: '/images/typescript.png',
                     name: 'Typescript',
                     profiency: '85%',
@@ -144,6 +150,12 @@ const data = {
                     level: 'Advanced'
                 },
                 {
+                    image: '/images/android.png',
+                    name: 'Android Development',
+                    profiency: '80%',
+                    level: 'Advnaced'
+                },
+                {
                     image: '/images/godot.png',
                     name: 'Godot',
                     profiency: '60%',
@@ -168,6 +180,12 @@ const data = {
                     level: 'Intermediate'
                 },
                 {
+                    image: '/images/pytorch.png',
+                    name: 'Pytorch',
+                    profiency: '70%',
+                    level: 'Intermediate'
+                },
+                {
                     image: '/images/flask.png',
                     name: 'Flask',
                     profiency: '80%',
@@ -176,7 +194,7 @@ const data = {
                 {
                     image: '/images/nextlogo.png',
                     name: 'Next.js',
-                    profiency: '75%',
+                    profiency: '85%',
                     level: 'Advanced'
                 },
             ],

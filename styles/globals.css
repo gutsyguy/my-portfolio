@@ -25,3 +25,49 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+body {
+  @apply font-sans;
+}
+
+.topnav {
+  @apply overflow-hidden bg-gray-800;
+}
+
+.topnav a {
+  @apply float-left block text-white text-center py-3.5 px-4 text-sm no-underline;
+}
+
+.topnav a:hover {
+  @apply bg-gray-300 text-black;
+}
+
+.topnav a.active {
+  @apply bg-green-600 text-white;
+}
+
+.topnav .icon {
+  @apply hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    @apply hidden;
+  }
+
+  .topnav a.icon {
+    @apply float-right block;
+  }
+
+  .topnav.responsive {
+    @apply relative;
+  }
+
+  .topnav.responsive .icon {
+    @apply absolute right-0 top-0;
+  }
+
+  .topnav.responsive a {
+    @apply float-none block text-left;
+  }
+}
