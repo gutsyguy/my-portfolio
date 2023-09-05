@@ -19,7 +19,7 @@ const About = (props: about) => {
       <div className="px-6 md:px-16 lg:px-28">
         <div className="flex flex-wrap items-center">
           <Image
-            className="p-2 "
+            className="p-2 rounded-[2rem] "
             src="/images/yalamber.png"
             width={400}
             data-aos="fade-up"
