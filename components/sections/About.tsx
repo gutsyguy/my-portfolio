@@ -22,6 +22,7 @@ const About = (props: about) => {
             className="p-2 "
             src="/images/yalamber.png"
             width={400}
+            data-aos="fade-up"
             height={400}
             alt="Yalamber"
           />
@@ -39,7 +40,9 @@ const About = (props: about) => {
         </div>
       </div>
 
-      <h1 className="text-center m-20 text-[5rem]">Specialties</h1>
+      <h1 className="text-center m-20 text-[5rem]" data-aos="fade-up">
+        Specialties
+      </h1>
       <div className="flex justify-center flex-wrap mt-12">
         <MiniCard
           data-aos="fade-up"

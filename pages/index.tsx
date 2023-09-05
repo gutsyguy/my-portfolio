@@ -42,7 +42,9 @@ const Home = () => {
       <About image="/nextlogo.png" />
 
       <div className=" text-white bg-black">
-        <h1 className="text-center text-[3rem]">Popular Projects</h1>
+        <h1 className="text-center text-[3rem]" data-aos="fade-up">
+          Popular Projects
+        </h1>
 
         <div className="flex justify-center flex-wrap">
           <div
@@ -79,13 +81,14 @@ const Home = () => {
             <Project project={data.projects[2]}></Project>
           </div>
         </div>
-        <Link href="#projects" className="ml-[9rem] text-[2rem]">
+        <Link
+          data-aos="fade-up"
+          href="#projects"
+          className="ml-[9rem] text-[2rem]"
+        >
           See all projects
         </Link>
       </div>
-      {/* <Timeline/>
-      <Projects/>
-      <Skills/> */}
       <div className="#Contact text-white bg-black pt-[5rem]">
         <Contact />
       </div>
