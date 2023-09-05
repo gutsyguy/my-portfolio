@@ -38,11 +38,14 @@ const Home = () => {
           </h2>
         </div>
       </div>
-      {/* <div className=' text-white bg-black'>
-          <h1 className='ml-[9rem] text-[3rem]'>Popular Projects</h1>
-          
-        <div className='flex justify-center flex-wrap'>
-          <div        
+
+      <About image="/nextlogo.png" />
+
+      <div className=" text-white bg-black">
+        <h1 className="text-center text-[3rem]">Popular Projects</h1>
+
+        <div className="flex justify-center flex-wrap">
+          <div
             className="sm:w-1/2 md:w-1/3 lg:w-1/4 mb-3 m-5 flex flex-row"
             data-te-animation-init
             data-te-animation-start="onScroll"
@@ -50,10 +53,10 @@ const Home = () => {
             data-te-animation-show-on-load="false"
             data-te-animation="[slide-right_1s_ease-in-out]"
             data-aos="fade-up"
-            >
+          >
             <Project project={data.projects[0]}></Project>
           </div>
-          <div        
+          <div
             className="sm:w-1/2 md:w-1/3 lg:w-1/4 mb-3 m-5 flex flex-row"
             data-te-animation-init
             data-te-animation-start="onScroll"
@@ -61,10 +64,10 @@ const Home = () => {
             data-te-animation-show-on-load="false"
             data-te-animation="[slide-right_1s_ease-in-out]"
             data-aos="fade-up"
-            >
+          >
             <Project project={data.projects[1]}></Project>
           </div>
-          <div        
+          <div
             className="sm:w-1/2 md:w-1/3 lg:w-1/4 mb-3 m-5 flex flex-row"
             data-te-animation-init
             data-te-animation-start="onScroll"
@@ -72,19 +75,20 @@ const Home = () => {
             data-te-animation-show-on-load="false"
             data-te-animation="[slide-right_1s_ease-in-out]"
             data-aos="fade-up"
-            >
+          >
             <Project project={data.projects[2]}></Project>
           </div>
         </div>
-        <Link href="#projects" className='ml-[9rem] text-[2rem]'>See all projects</Link>
-      </div> */}
-      <About image="/nextlogo.png" />
+        <Link href="#projects" className="ml-[9rem] text-[2rem]">
+          See all projects
+        </Link>
+      </div>
       {/* <Timeline/>
       <Projects/>
-      <Skills/>
-      <div className='#Contact text-white bg-black pt-[5rem]'>
-        <Contact/>
-      </div> */}
+      <Skills/> */}
+      <div className="#Contact text-white bg-black pt-[5rem]">
+        <Contact />
+      </div>
     </div>
   );
 };
