@@ -1,7 +1,7 @@
 const data = {
     projects:[
     {
-        _id: 1,
+        _id: "Pax1",
         title: 'Pax (Game)',
         category: 'Game development',
         skills: 'Godot',
@@ -10,7 +10,7 @@ const data = {
         image: '/images/Pax.png'
     },
     {
-        _id: 2,
+        _id: "Pax2",
         title: 'Pax (web)',
         category: 'Web development',
         skills: 'Next.js',
@@ -19,7 +19,7 @@ const data = {
         image: '/images/Pax.png'
     },
     {
-        _id: 3,
+        _id: "Next-Step",
         title: 'Next Step',
         category: 'Web development',
         skills: 'Next.js, Tailwind',
@@ -28,7 +28,7 @@ const data = {
         image: '/images/NextStep.png'
     },
     {
-        _id: 4,
+        _id: "Memeware",
         title: 'Memeware',
         category: 'Miscellaneous',
         skills: 'C++, SDL2',
@@ -37,7 +37,7 @@ const data = {
         image: '/images/Memeware.png'
     },
     {
-        _id: 5,
+        _id: "Elgoog",
         title: 'Elgoog',
         category: 'Web Dev',
         skills: 'Next.js, typescript, tailwind.',
@@ -46,7 +46,7 @@ const data = {
         image: '/images/Elgoog.png'
     },
     {
-        _id: 6,
+        _id: "Meal-Missionary",
         title: 'Meal Missionary',
         category: 'Web Dev',
         skills: 'Next.js, express, mongodb',
@@ -55,7 +55,7 @@ const data = {
         image: '/images/MealMissionary.png'
     },
     {
-        _id: 7,
+        _id: "Pacepals",
         title: 'Pacepals',
         category: 'Mobile Dev',
         skills: 'Flutter',
