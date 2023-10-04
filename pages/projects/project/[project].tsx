@@ -4,16 +4,14 @@ import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const Project = ({
-  projectId,
-}:any): InferGetServerSidePropsType<typeof getServerSideProps> => {
-  const router = useRouter();
-  const { project } = router.query;
-  console.log("id");
-  console.log(project);
+type Props = InferGetServerSidePropsType<typeof getServerSideProps>;
+
+const Project = ({ projectData }: Props) => {
+
+  console.log(projectData);
   return (
     <div className="bg-black h-full  px-[10rem] text-white">
-      <h1 className="text-[4rem] py-[1rem]">Title</h1>
+      <h1 className="text-[4rem] py-[1rem]">{projectData.title}</h1>
       <div className="flex my-[1rem]">
         <h2 className="mr-[1rem] ">Collabrators</h2>
         <h2>February 11, 2023</h2>
@@ -37,20 +35,29 @@ const Project = ({
   );
 };
 
-export async function getServerSideProps({
-  params,
-}: {
-  params: {
-    project: string;
-  };
-}): Promise<{ props: { projectId: string } }> {
-  console.log(params);
-  const { project } = params;
+export const getServerSideProps = async (
+  context: any
+): Promise<{ props: { projectData?: any; notFound?: any } }> => {
+  const { project } = context.query;
+
+  const baseUrl =
+    process.env.NODE_ENV === "production"
+      ? "https://yalamber-subba.vercel.app"
+      : "http://localhost:3000";
+
+  const res = await fetch(`${baseUrl}/api/projects/project/${project}`, {
+    method: "GET",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+    },
+  });
+
+  const projectData = await res.json();
   return {
     props: {
-      projectId: project,
+      projectData,
     },
   };
-}
+};
 
 export default Project;
