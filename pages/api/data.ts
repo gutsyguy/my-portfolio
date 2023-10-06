@@ -3,11 +3,16 @@ const data = {
     {
         _id: "Pax1",
         title: 'Pax (Game)',
+        collabs: "Elijah Cononigo",
         category: 'Game development',
+        projectType: "Hackathon",
+        projectFor: "Project for Lancer Hacks",
+        date: "February 11, 2023",
         skills: 'Godot',
         description: 'A game about Schizophrenia.',
         github: 'https://github.com/gutsyguy/git-init-game',
-        image: '/images/Pax.png'
+        image: '/images/Pax.png',
+        tools: ["Godot Engine"]
     },
     {
         _id: "Pax2",
@@ -24,7 +29,7 @@ const data = {
         category: 'Web development',
         skills: 'Next.js, Tailwind',
         description: 'Connecting students and mentors.',
-        github: 'https://github.com/Alex-RV/NextStep',
+        github: 'https://github.com/gutsyguy/NextStep',
         image: '/images/NextStep.png'
     },
     {
@@ -60,7 +65,7 @@ const data = {
         category: 'Mobile Dev',
         skills: 'Flutter',
         description: 'A fitness mobile app',
-        github: 'https://github.com/Alex-RV/Meal-Missionary',
+        github: 'https://github.com/gutsyguy/pacepals',
         image: '/images/Pacepals.png'
     },
 ],
