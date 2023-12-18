@@ -4,6 +4,7 @@ import Project from "@/components/Project";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { GetStaticProps } from "next";
+import Link from "next/link";
 
 type Project = {
   name: string;
@@ -47,7 +48,9 @@ const Projects = (props: any) => {
             data-te-animation="[slide-right_1s_ease-in-out]"
             data-aos="fade-up"
           >
-            <Project key={i} project={project}></Project>
+            <Link href={`/projects/project/${project._id}`}>
+              <Project key={i} project={project}></Project>
+            </Link>
           </div>
         ))}
       </div>
