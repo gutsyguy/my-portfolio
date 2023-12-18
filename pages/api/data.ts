@@ -68,6 +68,24 @@ const data = {
         github: 'https://github.com/gutsyguy/pacepals',
         image: '/images/Pacepals.png'
     },
+    {
+        _id: "JointShape",
+        title: 'JointShape',
+        category: '3d modeling',
+        skills: 'Fusion360',
+        description: 'A joined shape',
+        github: '',
+        image: '/images/jointshape.png'
+    },
+    {
+        _id: "Pyramid",
+        title: 'Pyramid',
+        category: '3d modeling',
+        skills: 'Fusion360',
+        description: 'A pyramid',
+        github: '',
+        image: '/images/pyramid.png'
+    },
 ],
     skills:
         {
