@@ -87,6 +87,86 @@ const data = {
         image: '/images/pyramid.png'
     },
 ],
+    timeline:[
+        {
+            title:"Google Code Next",
+            type:"Apprenticeship",
+            date:"September 2020 - Present",
+            description:"Joined during freshman year"
+        },
+        {
+            title:'Team Edge',
+            type:"program",
+            date:'July 2021 - June 2022',
+            description:' A yearlong program where I build websites with the flask framework and a camera with the raspberry pi'        
+        },
+        {
+            title:'Launch',
+            type: "program",
+            date: 'July 2022 - Present',
+            description: 'An entreprenuership program.'
+        },
+        {
+            title: 'Code Next Hacks 5',
+            type: "event",
+            date:'August 2022',
+            description: ' A 3 day hackathon where I build chat-app with react.js and firebase and won first place.'
+        },
+        {
+            title: 'Los altos 6',
+            type: "event",
+            date: 'September 2022',
+            description:'A 24 hour hackathon where I created game with Unity'
+        },
+        {
+            title:'Unite hacks',
+            type:"event",
+            date:'October 2022',
+            description: ' A twelve hour hackathon where I made a game with Godot'
+        },
+        {
+            title: 'Epoche hacks',
+            type: "event", 
+            date: 'December 2022',
+            description:'A twelve hour hackathon where I created Maleware with C++'
+        },
+        {
+            title: 'Git init 2023',
+            type: "event",
+            date: 'January 2023',
+            description: ' A 12 hour hackthon where I created a game with Godot'
+        },
+        {
+            title: "Lancer Hacks",
+            type: "event",
+            date: "February 2023",
+            description: "A 12 hour hackathon where I created a reverse search engine"
+        },
+        {
+            title:"Mountain Hacks",
+            type: "event",
+            date:"March 2023",
+            description: "Won best UX/UI design"
+        },
+        {
+            title: "Los Altos Hacks 7",
+            type: "event",
+            date: "February 2023",
+            description: "A 24 hour hackathon where I created a fitness mobile app"
+        },
+        {
+            title:"Anova Hacks",
+            type:"event",
+            date:"April 2023",
+            description:"Won best social good"
+        },
+        {
+            title:"Flutter workshop",
+            type:"event",
+            date:"March 2023",
+            description:"Developing the curriculum for a flutter workshop set to be taught on june 3rd"
+        }
+    ],
     skills:
         {
             Languages:[
