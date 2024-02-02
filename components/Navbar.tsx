@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import yalamber from "@/public/images/yalamber.png";
 
-function App() {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -75,4 +75,4 @@ function App() {
     </nav>
   );
 }
-export default App;
+export default Navbar;

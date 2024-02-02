@@ -3,11 +3,14 @@ import Router, { useRouter } from "next/router";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 
 type Props = InferGetServerSidePropsType<typeof getServerSideProps>;
 
 const Project = ({ projectData }: Props) => {
   const [tools, setTools] = useState([]);
+
+  console.log(projectData);
 
   useEffect(() => {
     const run = () => {
@@ -23,11 +26,18 @@ const Project = ({ projectData }: Props) => {
     run();
   }, [tools, projectData]);
   // console.log(projectData);
+
+  const collaborator = projectData.collabs;
+
   return (
     <div className="bg-black h-full  px-[10rem] text-white">
-      <h1 className="text-[4rem] py-[1rem]">{projectData.title}</h1>
+      <h1 className="text-[5rem] py-[1rem] text-center">{projectData.title}</h1>
       <div className="flex my-[1rem]">
-        <h2 className="mr-[1rem] ">{projectData.collabs}</h2>
+        <h2 className=" text-center">
+          {collaborator
+            ? "Authors: " + collaborator + ", Yalamber Subba"
+            : "Author: Yalamber Subba"}
+        </h2>
         <h2>{projectData.date}</h2>
       </div>
       <div className="flex flex-col">
@@ -41,25 +51,24 @@ const Project = ({ projectData }: Props) => {
           className="flex justify-center"
         />
         <h2 className="text-[2rem]">Tools Used</h2>
-        <ul>
-          {projectData.tools.map((tool: any, i: number) => (
-            <li
-              key={i}
-              // className="sm:w-1/2 md:w-1/3 lg:w-1/4 mb-3 m-5 flex flex-row"
-              data-te-animation-init
-              data-te-animation-start="onScroll"
-              data-te-animation-on-scroll="repeat"
-              data-te-animation-show-on-load="false"
-              data-te-animation="[slide-right_1s_ease-in-out]"
-              data-aos="fade-up"
-            >
-              {tool}
-            </li>
-          ))}
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <Suspense fallback={<Loading />}>
+          <ol>
+            {projectData.tools.map((tool: any, i: number) => (
+              <li
+                key={i}
+                className="sm:w-1/2 md:w-1/3 lg:w-1/4 mb-3 m-5 flex flex-row"
+                data-te-animation-init
+                data-te-animation-start="onScroll"
+                data-te-animation-on-scroll="repeat"
+                data-te-animation-show-on-load="false"
+                data-te-animation="[slide-right_1s_ease-in-out]"
+                data-aos="fade-up"
+              >
+                {tool}
+              </li>
+            ))}
+          </ol>
+        </Suspense>
       </div>
       <footer className="text-[2rem]">
         <h1>This project is very interesting</h1>
@@ -93,5 +102,9 @@ export const getServerSideProps = async (
     },
   };
 };
+
+function Loading() {
+  return <h2 className="text-white">🌀 Loading...</h2>;
+}
 
 export default Project;

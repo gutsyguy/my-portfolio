@@ -83,7 +83,7 @@ const Home = () => {
         </div>
         <Link
           data-aos="fade-up"
-          href="#projects"
+          href="/projects/project"
           className="ml-[9rem] text-[2rem]"
         >
           See all projects

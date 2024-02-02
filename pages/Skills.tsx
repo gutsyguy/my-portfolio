@@ -17,23 +17,19 @@ const Skills = () => {
     <div className="text-white bg-black" id="Skills">
       <div className="text-center">
         <div className="">
-          <h1
-            className="text-[4rem]
-            text-[#D8A206]"
-            data-aos="fade-up"
-            data-te-animation-init
-            data-te-animation-start="onScroll"
-            data-te-animation-on-scroll="repeat"
-            data-te-animation-show-on-load="false"
-            data-te-animation="[slide-right_1s_ease-in-out]"
-          >
-            Languages
-          </h1>
+          <div className="text-center pt-[1rem]">
+            <h1 data-aos="fade-up" className="text-[2rem] text-[#D8A206]">
+              <b id="About">What I have learned</b>
+            </h1>
+            <h1 data-aos="fade-up" className="text-[5rem]">
+              <b>Skills</b>
+            </h1>
+          </div>
           <ul className="text-[2rem]">
             {skillData.Languages.map((language, i) => (
               <div
                 key={i}
-                className="mb-3 lg:m-5 sm:m-1 flex flex-col"
+                className="my-3 lg:m-5 sm:m-1 flex flex-col"
                 data-te-animation-init
                 data-te-animation-start="onScroll"
                 data-te-animation-on-scroll="repeat"
@@ -54,9 +50,7 @@ const Skills = () => {
         </div>
         <div className="">
           <h1
-            className="
-            text-[4rem] 
-            text-[#D8A206]"
+            className="text-[5rem]"
             data-aos="fade-up"
             data-te-animation-init
             data-te-animation-start="onScroll"
@@ -64,13 +58,13 @@ const Skills = () => {
             data-te-animation-show-on-load="false"
             data-te-animation="[slide-right_1s_ease-in-out]"
           >
-            Technologies
+            <b>Technologies</b>
           </h1>
           <ul className="text-[2rem]">
             {skillData.Frameworks.map((framework, i) => (
               <div
                 key={i}
-                className="mb-3 lg:m-5 sm:m-1 flex flex-col"
+                className="my-3 lg:m-5 sm:m-1 flex flex-col"
                 data-te-animation-init
                 data-te-animation-start="onScroll"
                 data-te-animation-on-scroll="repeat"
@@ -91,8 +85,7 @@ const Skills = () => {
         </div>
         <div className="">
           <h1
-            className="text-[4rem] 
-            text-[#D8A206]"
+            className="text-[5rem]"
             data-aos="fade-up"
             data-te-animation-init
             data-te-animation-start="onScroll"
@@ -100,7 +93,7 @@ const Skills = () => {
             data-te-animation-show-on-load="false"
             data-te-animation="[slide-right_1s_ease-in-out]"
           >
-            Miscellanous
+            <b>Miscellanous</b>
           </h1>
           <ul className="text-[2rem]">
             {skillData.Miscellanous.map((miscellanous, i) => (
