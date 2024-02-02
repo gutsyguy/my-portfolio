@@ -1,16 +1,21 @@
 const data = {
     projects:[
     {
-        _id: 1,
+        _id: "Pax1",
         title: 'Pax (Game)',
+        collabs: "Elijah Cononigo",
         category: 'Game development',
+        projectType: "Hackathon",
+        projectFor: "Project for Lancer Hacks",
+        date: "February 11, 2023",
         skills: 'Godot',
         description: 'A game about Schizophrenia.',
         github: 'https://github.com/gutsyguy/git-init-game',
-        image: '/images/Pax.png'
+        image: '/images/Pax.png',
+        tools: ["Godot Engine"]
     },
     {
-        _id: 2,
+        _id: "Pax2",
         title: 'Pax (web)',
         category: 'Web development',
         skills: 'Next.js',
@@ -19,16 +24,16 @@ const data = {
         image: '/images/Pax.png'
     },
     {
-        _id: 3,
+        _id: "Next-Step",
         title: 'Next Step',
         category: 'Web development',
         skills: 'Next.js, Tailwind',
         description: 'Connecting students and mentors.',
-        github: 'https://github.com/Alex-RV/NextStep',
+        github: 'https://github.com/gutsyguy/NextStep',
         image: '/images/NextStep.png'
     },
     {
-        _id: 4,
+        _id: "Memeware",
         title: 'Memeware',
         category: 'Miscellaneous',
         skills: 'C++, SDL2',
@@ -37,7 +42,7 @@ const data = {
         image: '/images/Memeware.png'
     },
     {
-        _id: 5,
+        _id: "Elgoog",
         title: 'Elgoog',
         category: 'Web Dev',
         skills: 'Next.js, typescript, tailwind.',
@@ -46,7 +51,7 @@ const data = {
         image: '/images/Elgoog.png'
     },
     {
-        _id: 6,
+        _id: "Meal-Missionary",
         title: 'Meal Missionary',
         category: 'Web Dev',
         skills: 'Next.js, express, mongodb',
@@ -55,13 +60,31 @@ const data = {
         image: '/images/MealMissionary.png'
     },
     {
-        _id: 7,
+        _id: "Pacepals",
         title: 'Pacepals',
         category: 'Mobile Dev',
         skills: 'Flutter',
         description: 'A fitness mobile app',
-        github: 'https://github.com/Alex-RV/Meal-Missionary',
+        github: 'https://github.com/gutsyguy/pacepals',
         image: '/images/Pacepals.png'
+    },
+    {
+        _id: "JointShape",
+        title: 'JointShape',
+        category: '3d modeling',
+        skills: 'Fusion360',
+        description: 'A joined shape',
+        github: '',
+        image: '/images/jointshape.png'
+    },
+    {
+        _id: "Pyramid",
+        title: 'Pyramid',
+        category: '3d modeling',
+        skills: 'Fusion360',
+        description: 'A pyramid',
+        github: '',
+        image: '/images/pyramid.png'
     },
 ],
     skills:

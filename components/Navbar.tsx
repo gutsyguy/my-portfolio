@@ -54,7 +54,7 @@ function App() {
             Experience
           </Link>
           <Link
-            href="/Projects"
+            href="/projects/project"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 p-5 hover:bg-[#003566]"
           >
             Projects
