@@ -27,13 +27,16 @@ const Projects = (props: any) => {
   }, []);
 
   return (
-    <div className="bg-black text-white p-20" id="Projects">
-      <div className="text-center animate-fade">
+    <div className="bg-black text-white" id="Projects">
+      <div className="text-center animate-fade pt-[1rem]">
+        <h1 data-aos="fade-up" className="text-[2rem] text-[#D8A206]">
+          <b id="About">What I have made</b>
+        </h1>
         <h1
           data-aos="fade-up"
           className="text-[3rem] lg:text-[5rem] md:text-[4rem]"
         >
-          <b>My Projects</b>
+          <b>Projects</b>
         </h1>
       </div>
       <div className="flex justify-center flex-wrap">
