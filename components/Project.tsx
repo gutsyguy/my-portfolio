@@ -21,7 +21,7 @@ const Project = (props: any) => {
       <div className="bg-black rounded-lg shadow-md border-2 border-[#D7A514] border-solid">
         <div className="flex justify-center">
           {/* Using max-w-full to ensure image doesn't overflow its container and w-full to take full width of its container */}
-          <img
+          <Image
             src={project.image}
             className="max-w-full w-full md:w-[350px] h-auto md:h-[15rem] rounded-md"
             alt={project.title}
