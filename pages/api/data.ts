@@ -3,10 +3,10 @@ const data = {
     {
         _id: "Pax1",
         title: 'Pax (Game)',
-        collabs: "Elijah Cononigo",
+        collabs: ["Elijah Cononigo"],
         category: 'Game development',
         projectType: "Hackathon",
-        projectFor: "Project for Lancer Hacks",
+        projectFor: "Project for Git Init Hacks",
         date: "February 11, 2023",
         skills: 'Godot',
         description: 'A game about Schizophrenia.',
@@ -17,56 +17,68 @@ const data = {
     {
         _id: "Pax2",
         title: 'Pax (web)',
+        collabs:["Alex Riabov", " Johnny Zheng"],
         category: 'Web development',
         skills: 'Next.js',
         description: 'A website about mental health.',
         github: 'https://github.com/Alex-RV/PaxGitInit',
-        image: '/images/Pax.png'
+        image: '/images/Pax.png',
+        tools: ["React.js", "Google Auth"]
     },
     {
         _id: "Next-Step",
         title: 'Next Step',
         category: 'Web development',
+        collabs:["Alex Riabov", " David Zhong"],
         skills: 'Next.js, Tailwind',
         description: 'Connecting students and mentors.',
         github: 'https://github.com/gutsyguy/NextStep',
-        image: '/images/NextStep.png'
+        image: '/images/NextStep.png',
+        tools: ["Tailwind, Next.js"]
     },
     {
         _id: "Memeware",
         title: 'Memeware',
         category: 'Miscellaneous',
+        collabs: ["Alex Riabov", " Julian Barbera", " Shaylee Coulter"],
         skills: 'C++, SDL2',
         description: 'A maleware that shows memes.',
         github: 'https://github.com/JulianBarbera/memeware',
-        image: '/images/Memeware.png'
+        image: '/images/Memeware.png',
+        tools: ["C++", "SDL2"]
     },
     {
         _id: "Elgoog",
         title: 'Elgoog',
         category: 'Web Dev',
         skills: 'Next.js, typescript, tailwind.',
+        collabs: ["Alex Riabov", ", Luis Cardenas", ", David Zhong"],
         description: 'A reverse search engine',
         github: 'https://github.com/Alex-RV/DALY',
-        image: '/images/Elgoog.png'
+        image: '/images/Elgoog.png',
+        tools: ["Next.js", "Typescript", "Tailwind", "Google Engine Api"]
     },
     {
         _id: "Meal-Missionary",
         title: 'Meal Missionary',
         category: 'Web Dev',
+        collabs: ["Alex Riabov"],
         skills: 'Next.js, express, mongodb',
         description: 'Connecting charities and resturants',
         github: 'https://github.com/Alex-RV/Meal-Missionary',
-        image: '/images/MealMissionary.png'
+        image: '/images/MealMissionary.png',
+        tools: ["Next.js", "Express", "MongoDB"]
     },
     {
         _id: "Pacepals",
         title: 'Pacepals',
         category: 'Mobile Dev',
+        collabs: ["David Zhong", " Alex Riabov"],
         skills: 'Flutter',
         description: 'A fitness mobile app',
         github: 'https://github.com/gutsyguy/pacepals',
-        image: '/images/Pacepals.png'
+        image: '/images/Pacepals.png',
+        tools: ['Flutter']
     },
     {
         _id: "JointShape",
@@ -75,7 +87,8 @@ const data = {
         skills: 'Fusion360',
         description: 'A joined shape',
         github: '',
-        image: '/images/jointshape.png'
+        image: '/images/jointshape.png',
+        tools: ['Fusion 360']
     },
     {
         _id: "Pyramid",
@@ -84,7 +97,8 @@ const data = {
         skills: 'Fusion360',
         description: 'A pyramid',
         github: '',
-        image: '/images/pyramid.png'
+        image: '/images/pyramid.png',
+        tools: ['Fusion 360'],
     },
 ],
     timeline:[
@@ -165,6 +179,24 @@ const data = {
             type:"event",
             date:"March 2023",
             description:"Developing the curriculum for a flutter workshop set to be taught on june 3rd"
+        },
+        {
+            title: "Bubbel",
+            type: "Start up",
+            date: "June 2023 - Present",
+            description: "Social Media Start up"
+        },
+        {
+            title: "Buildspace",
+            type:"event",
+            date: "August 2023 - September 2023",
+            description: "JUke"
+        },
+        {
+            title: "Cruz Hacks 2024",
+            type: "event",
+            date: "January 2024",
+            description: "Built a transit tracker app"
         }
     ],
     skills:

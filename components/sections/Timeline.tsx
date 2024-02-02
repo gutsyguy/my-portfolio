@@ -48,7 +48,7 @@ const Timeline = () => {
                     title={timelineElement.title}
                     type="Apprenticeship"
                     date="September 2020 - Present"
-                    description="Joined during freshman year"
+                    description="Joined  freshman year"
                   />
                 ) : (
                   <RightTimelineContainer
@@ -74,7 +74,7 @@ const Timeline = () => {
               //   <Project key={i} project={project}></Project>
               // </div>
             )}
-
+            {/* 
             <LeftTimelineContainer
               data-aos="fade-up"
               data-aos-duration="3000"
@@ -191,7 +191,7 @@ const Timeline = () => {
               data-aos="fade-up"
               data-aos-duration="3000"
               data-aos-delay="1000"
-            />
+            /> */}
           </div>
         </div>
       </div>
