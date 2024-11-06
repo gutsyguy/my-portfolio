@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import data from "./api/data";
 import Project from "@/components/Project";
-import popupCard2 from "@/components/popupCard2";
 
 //sections
 import About from "@/components/sections/About";
