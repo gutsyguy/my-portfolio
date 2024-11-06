@@ -1,0 +1,26 @@
+import React, { useState, useEffect } from "react";
+import SimpleImageSlider from 'react-simple-image-slider'
+
+function CustomCarousel({ children }:any) {
+
+  const images = [
+  { url: "https://www.birds.cornell.edu/home/wp-content/uploads/2023/09/334289821-Baltimore_Oriole-Matthew_Plante.jpg" },
+];
+
+  return (
+    <div
+      className="max-w-full w-full md:w-[350px] h-auto md:h-[15rem] rounded-md"
+    >
+      <SimpleImageSlider
+        width={20}
+        height={20}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
+    </div>
+  );
+}
+
+export default CustomCarousel;
+
