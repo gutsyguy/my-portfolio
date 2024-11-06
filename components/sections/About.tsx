@@ -31,10 +31,8 @@ const About = (props: about) => {
               Who I Am
             </h1>
             <p className="text-center text-[1rem] md:text-[1.5rem] lg:text-[2rem]">
-              I am currently a Senior at Alameda Science and Technology
-              Institute. I enjoy programming, hardware, movies and gaming. I can
-              work well with a team and by myself. I am eager to work in
-              different types of software and hardware development.
+              I am currently a freshman at UC Davis. I enjoy programming, MMA
+              and boxing.
             </p>
           </div>
         </div>

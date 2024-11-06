@@ -24,6 +24,8 @@ const Project = (props: any) => {
           <Image
             src={project.image}
             className="max-w-full w-full md:w-[350px] h-auto md:h-[15rem] rounded-md"
+            width={0}
+            height={0}
             alt={project.title}
           />
         </div>
